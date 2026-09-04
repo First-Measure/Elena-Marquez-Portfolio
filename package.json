@@ -1,0 +1,21 @@
+{
+  "name": "first-measure-portfolio-harness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Technical quality harness for independent First Measure client portfolios.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "html-validate \"**/*.html\" && playwright test",
+    "validate:html": "html-validate \"**/*.html\"",
+    "validate:browser": "playwright test",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "html-validate": "11.13.0"
+  }
+}
